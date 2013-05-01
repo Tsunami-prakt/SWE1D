@@ -9,3 +9,6 @@ build/
 
 # Scons database
 .sconsign.dblite
+
+# Codeblocks
+*.cbp
