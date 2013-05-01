@@ -60,6 +60,10 @@ env.Append(CCFLAGS=['-fmessage-length=0'])
 # Add source directory to include path (important for subdirectories)
 env.Append(CPPPATH=['.'])
 
+debug = ARGUMENTS.get('debug', 0)
+if int(debug):
+  env.Append(CCFLAGS = '-g')
+
 # Output directory
 buildDir = '#build'
 
